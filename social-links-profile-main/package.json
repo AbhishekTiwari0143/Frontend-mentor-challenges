@@ -1,0 +1,16 @@
+{
+  "name": "social-links-profile-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social links profile coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./index.css -o ./css/output.css",
+    "watch": "tailwindcss -i ./index.css -o ./css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

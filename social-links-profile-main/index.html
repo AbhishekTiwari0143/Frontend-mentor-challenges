@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Social links profile</title>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <div
+      class="main-container w-screen h-screen bg-[#141414] flex justify-center items-center"
+    >
+      <div class="w-[320px] bg-[#1f1f1f] p-6 text-white">
+        <div class="flex flex-col w-full h-full items-center">
+          <img
+            class="rounded-full"
+            src="assets/images/avatar-jessica.jpeg"
+            width="75px"
+            height="75px"
+            alt=""
+          />
+          <h1 class="text-2xl font-bold tracking-wide mt-6 md:mt-4">
+            Jessica Randall
+          </h1>
+          <h3 class="text-sm font-semibold text-[#cae572] mt-1">
+            London, United Kingdom
+          </h3>
+          <p class="text-sm mt-4 mb-8 md:mb-6">
+            "Front-end developer and avid reader."
+          </p>
+          <ul
+            class="links flex flex-col justify-between items-center w-full gap-6 md:gap-3"
+          >
+            <li
+              class="bg-[#333333] w-[100%] py-2 text-center rounded-md text-xl md:text-sm cursor-pointer hover:bg-[#c4f82a] hover:text-black"
+            >
+              <a href="#">GitHub</a>
+            </li>
+            <li
+              class="bg-[#333333] w-[100%] py-2 text-center rounded-md text-xl md:text-sm cursor-pointer hover:bg-[#c4f82a] hover:text-black"
+            >
+              <a href="#">Frontend Mentor</a>
+            </li>
+            <li
+              class="bg-[#333333] w-[100%] py-2 text-center rounded-md text-xl md:text-sm cursor-pointer hover:bg-[#c4f82a] hover:text-black"
+            >
+              <a href="#">LinkedIn</a>
+            </li>
+            <li
+              class="bg-[#333333] w-[100%] py-2 text-center rounded-md text-xl md:text-sm cursor-pointer hover:bg-[#c4f82a] hover:text-black"
+            >
+              <a href="#">Twitter</a>
+            </li>
+            <li
+              class="bg-[#333333] w-[100%] py-2 text-center rounded-md text-xl md:text-sm cursor-pointer hover:bg-[#c4f82a] hover:text-black"
+            >
+              <a href="#">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="absolute bottom-0 left-[50%] -translate-x-[50%]">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">ABhishek</a>.
+        </div>
+      </div>
+    </div>
 
-  GitHub
-  Frontend Mentor
+    <!-- 
   LinkedIn
   Twitter
   Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+   -->
+  </body>
 </html>
