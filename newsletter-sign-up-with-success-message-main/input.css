@@ -20,8 +20,9 @@
   color: #ea8983;
 }
 
-main {
-  transition: all 0.5s;
+.main {
+  width: 100vw;
+  height: 100vh;
 }
 
 /* #36384d background color  */

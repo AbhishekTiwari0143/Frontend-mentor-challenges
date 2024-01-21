@@ -17,7 +17,7 @@
     </title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
+    <!-- <style>
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -25,15 +25,15 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+    </style> -->
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
     <div
-      class="main w-screen h-screen bg-[#36384d] flex justify-center items-center"
+      class="main bg-white flex justify-center items-center md:h-screen md:bg-[#36384d]"
     >
       <div
-        class="loginPage h-[70%] sign bg-[#ffffff] flex gap-2 p-4 rounded-3xl"
+        class="hidden loginPage h-[70%] sign bg-[#ffffff] flex flex-col-reverse md:flex-row gap-2 md:p-4 md:rounded-3xl"
       >
         <div class="w-[420px] flex-1 left-side-text p-6 flex flex-col">
           <h1 class="text-6xl text-[3.5rem] font-semibold mb-4">
@@ -84,26 +84,36 @@
 
         <div class="right-side flex flex-row-reverse">
           <img
-            class="object-contain"
+            class="hidden object-contain md:block"
             src="assets/images/illustration-sign-up-desktop.svg"
             alt="image"
+          />
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="image"
+            class="w-[100%] md:hidden"
           />
         </div>
       </div>
 
       <div
-        class="hidden success bg-white w-[80%] max-w-[400px] p-12 rounded-[2rem] text-[#202342]"
+        class="success bg-white w-[80%] max-w-[400px] h-screen flex flex-col justify-around p-0 rounded-[2rem] text-[#202342] md:p-12 md:justify-normal md:h-auto"
       >
-        <img
-          class="mb-4"
-          src="assets/images/icon-success.svg"
-          alt="success icon"
-        />
-        <h1 class="text-5xl font-bold py-4">Thanks for subscribing!</h1>
-        <p class="pt-2 pb-6">
-          A confirmation email has been sent to ash@loremcompany.com. Please
-          open it and click the button inside to confirm your subscription.
-        </p>
+        <div>
+          <img
+            class="mb-4"
+            src="assets/images/icon-success.svg"
+            alt="success icon"
+            width="60px"
+            height="60px"
+          />
+          <h1 class="text-5xl font-bold py-4">Thanks for subscribing!</h1>
+          <p class="pt-2 pb-6">
+            A confirmation email has been sent to ash@loremcompany.com. Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
+
         <button
           id="dismiss"
           type="button"
@@ -141,12 +151,12 @@
 
     <!-- Success message end -->
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
 
     <script src="script.js"></script>
   </body>
