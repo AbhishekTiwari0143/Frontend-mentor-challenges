@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 83, 123, 1) 0%,
+    rgba(255, 105, 58, 1) 100%
+  );
+  box-shadow: 0 10px 25px #ff625766;
+}
+
+.error {
+  background-color: #ffe8e6;
+  border: 1px solid #ea8983;
+  color: #ea8983;
+}
+.error::placeholder {
+  color: #ea8983;
+}
+
+main {
+  transition: all 0.5s;
+}
+
+/* #36384d background color  */
+/* text-color #232742 */
+
+/* #ffe8e6 input bgc */
+/* #ea8983 input text color  */

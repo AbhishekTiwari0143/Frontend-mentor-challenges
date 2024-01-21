@@ -29,6 +29,90 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
+    <div
+      class="main w-screen h-screen bg-[#36384d] flex justify-center items-center"
+    >
+      <div
+        class="loginPage h-[70%] sign bg-[#ffffff] flex gap-2 p-4 rounded-3xl"
+      >
+        <div class="w-[420px] flex-1 left-side-text p-6 flex flex-col">
+          <h1 class="text-6xl text-[3.5rem] font-semibold mb-4">
+            Stay updated!
+          </h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="points flex flex-col gap-1 mt-3 mb-6">
+            <li class="flex gap-3">
+              <img src="assets/images/icon-list.svg" alt="icon list" />Product
+              discovery and building what matters
+            </li>
+            <li class="flex gap-3">
+              <img src="assets/images/icon-list.svg" alt="icon list" />Measuring
+              to ensure updates are a success
+            </li>
+            <li class="flex gap-3">
+              <img src="assets/images/icon-list.svg" alt="icon list" />And much
+              more!
+            </li>
+          </ul>
+
+          <form id="form" class="flex flex-col gap-2">
+            <label for="userInput" class="flex justify-between">
+              <h1 class="text-sm font-semibold">Email address</h1>
+              <h1
+                id="error-msg"
+                class="hidden text-sm font-semibold text-[#ea8983]"
+              >
+                Valid Email Required
+              </h1>
+            </label>
+            <input
+              class="w-full border-2 p-2 mb-3 rounded-md"
+              type="text"
+              id="userInput"
+              name="userInput"
+              placeholder="email@company.com"
+            />
+            <button
+              type="submit"
+              class="button relative p-3 bg-[#232742] text-white font-semibold tracking-wide rounded-md"
+              onclick="submitform()"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+
+        <div class="right-side flex flex-row-reverse">
+          <img
+            class="object-contain"
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="image"
+          />
+        </div>
+      </div>
+
+      <div
+        class="hidden success bg-white w-[80%] max-w-[400px] p-12 rounded-[2rem] text-[#202342]"
+      >
+        <img
+          class="mb-4"
+          src="assets/images/icon-success.svg"
+          alt="success icon"
+        />
+        <h1 class="text-5xl font-bold py-4">Thanks for subscribing!</h1>
+        <p class="pt-2 pb-6">
+          A confirmation email has been sent to ash@loremcompany.com. Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+        <button
+          id="dismiss"
+          type="button"
+          class="button relative p-3 bg-[#232742] text-white font-semibold tracking-wide rounded-md w-full"
+        >
+          Dismiss message
+        </button>
+      </div>
+    </div>
     <!-- Sign-up form start -->
 
     <!-- Stay updated!
@@ -63,5 +147,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
