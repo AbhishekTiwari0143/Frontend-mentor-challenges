@@ -18,10 +18,56 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <main class="w-full h-full m-auto">
-      <h1 class="text-white bg-black flex justify-center items-center">
-        Hello
-      </h1>
+    <main
+      class="w-[100%] h-[100vh] flex justify-center items-center bg-[#f0f0f0]"
+    >
+      <div class="main w-[80%] h-[50%] m-auto bg-white px-2 py-12">
+        <div class="inputs flex gap-2 w-[100%]">
+          <div class="input1 flex flex-col w-[30%]">
+            <label
+              for="date"
+              class="text-[.7rem] tracking-widest text-[#7d7d7d] uppercase font-bold"
+              >Day</label
+            >
+            <input
+              type="text"
+              placeholder="days"
+              name="days"
+              id="date"
+              pattern="\d+(\.\d{1,2})?"
+              class="border text-xl px-2 py-1"
+            />
+          </div>
+          <div class="input2 flex flex-col w-[30%]">
+            <label
+              for="date"
+              class="text-xs tracking-widest text-[#7d7d7d] uppercase font-bold"
+              >Month</label
+            >
+            <input
+              type="text"
+              placeholder="month"
+              name="month"
+              id="date"
+              class="border text-xl px-2 py-1"
+            />
+          </div>
+          <div class="input3 flex flex-col w-[30%]">
+            <label
+              for="date"
+              class="text-xs tracking-widest text-[#7d7d7d] uppercase font-bold"
+              >Year</label
+            >
+            <input
+              type="text"
+              placeholder="year"
+              name="year"
+              id="date"
+              class="border text-xl px-2 py-1"
+            />
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Day
   DD
