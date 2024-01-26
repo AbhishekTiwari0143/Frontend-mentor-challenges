@@ -18,54 +18,91 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <main
-      class="w-[100%] h-[100vh] flex justify-center items-center bg-[#f0f0f0]"
-    >
-      <div class="main w-[80%] h-[50%] m-auto bg-white px-2 py-12">
-        <div class="inputs flex gap-2 w-[100%]">
-          <div class="input1 flex flex-col w-[30%]">
+    <main class="w-[100%] h-[100vh] flex bg-[#f0f0f0]">
+      <div
+        class="main w-[80%] h-[70%] mx-auto mt-20 rounded-2xl bg-white px-2 py-12 md:max-w-[670px]"
+      >
+        <form class="inputs flex gap-2 w-[100%] md:w-[90%] md:px-12 md:gap-6">
+          <div class="input1 flex flex-col w-[30%] md:w-28%">
             <label
-              for="date"
+              for="dateI"
               class="text-[.7rem] tracking-widest text-[#7d7d7d] uppercase font-bold"
               >Day</label
             >
             <input
               type="text"
-              placeholder="days"
+              placeholder="DD"
               name="days"
-              id="date"
-              pattern="\d+(\.\d{1,2})?"
-              class="border text-xl px-2 py-1"
+              id="dateI"
+              class="border text-xl px-2 py-1 rounded-md md:h-12"
             />
           </div>
-          <div class="input2 flex flex-col w-[30%]">
+          <div class="input2 flex flex-col w-[33%] md:w-28%">
             <label
-              for="date"
-              class="text-xs tracking-widest text-[#7d7d7d] uppercase font-bold"
+              for="monthI"
+              class="text-[.7rem] tracking-widest text-[#7d7d7d] uppercase font-bold"
               >Month</label
             >
             <input
               type="text"
-              placeholder="month"
-              name="month"
-              id="date"
-              class="border text-xl px-2 py-1"
+              placeholder="MM"
+              name="monthI"
+              id="monthI"
+              class="border font-bold text-xl rounded-md px-2 py-1 md:h-12"
             />
           </div>
-          <div class="input3 flex flex-col w-[30%]">
+          <div class="input3 flex flex-col w-[30%] md:w-28%">
             <label
-              for="date"
-              class="text-xs tracking-widest text-[#7d7d7d] uppercase font-bold"
+              for="yearI"
+              class="text-[.7rem] tracking-widest text-[#7d7d7d] uppercase font-bold"
               >Year</label
             >
             <input
               type="text"
-              placeholder="year"
+              placeholder="YYYY"
               name="year"
-              id="date"
-              class="border text-xl px-2 py-1"
+              id="yearI"
+              class="border text-xl px-2 py-1 rounded-md md:h-12"
             />
           </div>
+        </form>
+        <hr class="mt-8 md:mt-16 md:w-[88%] md:m-auto" />
+        <div class="relative">
+          <img
+            src="assets/images/icon-arrow.svg"
+            alt="image arrow down"
+            id="submit"
+            width="50px"
+            height="50px"
+            class="bg-[#874cff] md:w-20 absolute m-auto left-0 right-0 -top-[26px] p-4 rounded-full items-center cursor-pointer md:left-[75%] md:-top-[40px]"
+          />
+        </div>
+
+        <div class="age relative mt-8 md:mt-0">
+          <h1
+            class="w-[100%] text-5xl m-auto text-left font-bold pl-8 md:text-6xl"
+          >
+            <span id="year" class="text-6xl text-[#874cff] md:text-8xl"
+              >--</span
+            >
+            years
+          </h1>
+          <h1
+            class="w-[100%] text-5xl m-auto text-left font-bold pl-8 md:text-6xl"
+          >
+            <span id="month" class="text-6xl text-[#874cff] md:text-8xl"
+              >--</span
+            >
+            months
+          </h1>
+          <h1
+            class="w-[100%] text-5xl m-auto text-left font-bold pl-8 md:text-6xl"
+          >
+            <span id="date" class="text-6xl text-[#874cff] md:text-8xl"
+              >--</span
+            >
+            days
+          </h1>
         </div>
       </div>
     </main>
@@ -82,5 +119,7 @@
   -- months
   -- days
    -->
+
+    <script src="script.js"></script>
   </body>
 </html>
