@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <main class="w-[100%] bg-[#f9fafe] md:py-12">
+      <div
+        class="notification w-[100%] max-w-[640px] bg-white m-auto md:py-4 md:rounded-xl"
+      >
+        <div class="flex items-center justify-between p-4">
+          <h1 class="text-xl font-bold flex gap-3">
+            Notifications
+            <span class="bg-[#0b337e] px-2 text-white text-xl rounded-md mr-4"
+              >3</span
+            >
+          </h1>
+          <p class="text-[#797e82] text-[1rem]">Mark all as read</p>
+        </div>
+        <div class="notifications px-4 flex flex-col gap-4">
+          <!-- Notification 1 -->
+          <div class="not1 flex items-start bg-[#f6fafd] py-4 px-6 rounded-2xl">
+            <img
+              src="assets/images/avatar-mark-webber.webp"
+              alt="mark"
+              width="38px"
+              height="38px"
+              class="object-contain mr-3"
+            />
+            <div class="text">
+              <h1 class="relative text-[#797e82] font-medium">
+                <span class="font-bold text-[#25282d]">Mark Webber</span>
+                reacted to your recent post
+                <span class="font-medium text-[#697076]">
+                  My first tournament today!
+                </span>
+                <span
+                  class="absolute m-auto w-2 h-2 bg-red-600 rounded-full ml-2 bottom-[15%] backdrop:blur-md"
+                ></span>
+              </h1>
+              <p class="text-[#a0a4b1]">1m ago</p>
+            </div>
+          </div>
+
+          <!-- Notification 2 -->
+          <div class="not2 flex items-start bg-[#f6fafd] py-4 px-6 rounded-2xl">
+            <img
+              src="assets/images/avatar-angela-gray.webp"
+              alt="mark"
+              width="38px"
+              height="38px"
+              class="object-contain mr-3"
+            />
+            <div class="text">
+              <h1 class="relative text-[#797e82] font-medium">
+                <span class="font-bold text-[#25282d]">Angela Gray</span>
+                followed you
+                <span
+                  class="absolute m-auto w-2 h-2 bg-red-600 rounded-full ml-2 bottom-[15%] backdrop:blur-md"
+                ></span>
+              </h1>
+              <p class="text-[#a0a4b1]">5m ago</p>
+            </div>
+          </div>
+
+          <!-- Notification 3 -->
+          <div class="not3 flex items-start bg-[#f6fafd] py-4 px-6 rounded-2xl">
+            <img
+              src="assets/images/avatar-jacob-thompson.webp"
+              alt="mark"
+              width="38px"
+              height="38px"
+              class="object-contain mr-3"
+            />
+            <div class="text">
+              <h1 class="relative text-[#797e82] font-medium">
+                <span class="font-bold text-[#25282d]">Jacob Thompson</span>
+                has joined your group
+                <span class="font-bold text-[#17366b]"> Chess Club</span>
+                <span
+                  class="absolute m-auto w-2 h-2 bg-red-600 rounded-full ml-2 bottom-[15%] backdrop:blur-md"
+                ></span>
+              </h1>
+              <p class="text-[#a0a4b1]">1 day ago</p>
+            </div>
+          </div>
+
+          <!-- Notification 4 -->
+          <div class="not4 flex items-start bg-[#f6fafd] py-4 px-6 rounded-2xl">
+            <img
+              src="assets/images/avatar-rizky-hasanuddin.webp"
+              alt="mark"
+              width="38px"
+              height="38px"
+              class="object-contain mr-3"
+            />
+            <div class="text">
+              <h1 class="relative text-[#797e82] font-medium">
+                <span class="font-bold text-[#25282d]">Rizky Hasanuddin</span>
+                sent you a private message
+              </h1>
+              <p class="text-[#a0a4b1]">5 days ago</p>
+              <div class="p-4 mt-4 bg-white border">
+                <p class="text-[#797e82] leading-5 font-medium">
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notification 5 -->
+          <div class="not5 flex items-start bg-[#f6fafd] py-4 px-6 rounded-2xl">
+            <img
+              src="assets/images/avatar-kimberly-smith.webp"
+              alt="mark"
+              width="38px"
+              height="38px"
+              class="object-contain mr-3"
+            />
+            <div class="text">
+              <div class="flex">
+                <h1 class="relative text-[#797e82] font-medium">
+                  <span class="font-bold text-[#25282d]">Kimberly Smith </span>
+                  commented on your picture
+                </h1>
+                <img
+                  src="assets/images/image-chess.webp"
+                  alt="image chess"
+                  width="40px"
+                  height="30px"
+                  class="object-contain"
+                />
+              </div>
+              <p class="text-[#a0a4b1]">1 week ago</p>
+            </div>
+          </div>
+
+          <!-- Notification 6 -->
+          <div class="not6 flex items-start bg-[#f6fafd] py-4 px-6 rounded-2xl">
+            <img
+              src="assets/images/avatar-nathan-peterson.webp"
+              alt="mark"
+              width="38px"
+              height="38px"
+              class="object-contain mr-3"
+            />
+            <div class="text">
+              <h1 class="relative text-[#797e82] font-medium">
+                <span class="font-bold text-[#25282d]">Nathan Peterson </span>
+                reacted to your recent post
+                <span class="font-medium text-[#697076]">
+                  5 end-game strategies to increase your win rate
+                </span>
+              </h1>
+              <p class="text-[#a0a4b1]">2 weeks ago</p>
+            </div>
+          </div>
+
+          <!-- Notification 7 -->
+          <div class="not7 flex items-start bg-[#f6fafd] py-4 px-6 rounded-2xl">
+            <img
+              src="assets/images/avatar-anna-kim.webp"
+              alt="mark"
+              width="38px"
+              height="38px"
+              class="object-contain mr-3"
+            />
+            <div class="text">
+              <h1 class="relative text-[#797e82] font-medium">
+                <span class="font-bold text-[#25282d]">Anna Kim </span>
+                left the group
+
+                <span class="font-bold text-[#17366b]"> Chess Club</span>
+              </h1>
+              <p class="text-[#a0a4b1]">2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Notifications 3
+
+  Mark all as read
+
+  Mark Webber reacted to your recent post My first tournament today!
+  1m ago
+
+  Angela Gray followed you
+  5m ago
+
+  Jacob Thompson has joined your group Chess Club
+  1 day ago
+
+  Rizky Hasanuddin sent you a private message
+  5 days ago
+  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+  I'm already having lots of fun and improving my game.
+
+  Kimberly Smith commented on your picture
+  1 week ago
+
+  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+  2 weeks ago
+
+  Anna Kim left the group Chess Club
+  2 weeks ago -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">ABhishek</a>.
+    </div>
+  </body>
+</html>
