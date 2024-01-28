@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <main
+      class="bg-[--background] w-[100%] h-[100vh] flex justify-center items-center"
+    >
+      <div class="main max-w-[550px] px-8">
+        <div class="title relative flex justify-between items-center mb-12">
+          <h1 class="text-5xl font-semibold text-[--h2-color]">calc</h1>
+          <div class="flex gap-10 items-end">
+            <h3 class="font-semibold text-[--h2-color]">Theme</h3>
+
+            <div class="flex flex-col">
+              <div class="text-[--h2-color] tracking-widest">1 2 3</div>
+              <div
+                class="theme-button relative w-[100%] h-5 bg-[--Calculator-background] rounded-xl cursor-pointer"
+              >
+                <span
+                  id="button-ball"
+                  class="absolute w-3 h-3 bg-[--orange-key] top-[20%] position-1 rounded-full"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          id="screen"
+          class="w-[100%] h-16 bg-[--screen-background] text-[--h2-color] text-4xl font-semibold flex text-right px-4 rounded-xl mb-8 py-4"
+          type="text"
+          value="0"
+        />
+        <div class="buttons bg-[--Calculator-background] rounded-xl">
+          <div class="keys flex justify-between w-[100%]">
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="delete">DEL</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>+</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>-</div>
+            <div>.</div>
+            <div>0</div>
+            <div>/</div>
+            <div>x</div>
+            <div class="reset">RESET</div>
+            <div class="equal">=</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
