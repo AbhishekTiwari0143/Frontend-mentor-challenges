@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  color: white;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+button {
+  background-image: linear-gradient(to right, #50c6d4 25%, #50c6d4 100%);
+}
