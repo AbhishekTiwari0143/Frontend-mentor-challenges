@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body class="bg-[#1b2330] py-8">
-    <header class="px-16">
+    <header class="px-8">
       <div class="flex justify-between mb-8">
         <img
           src="images/logo.svg"
@@ -108,7 +108,7 @@
         </div>
       </section>
 
-      <section class="section-three my-[12rem] md:flex">
+      <section class="section-three my-[12rem] md:flex md:gap-8">
         <div class="productive-image">
           <img
             src="images/illustration-stay-productive.png"
@@ -126,8 +126,10 @@
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <div class="works underline underline-offset-8 mb-4">
-            <h4 class="mt-8 flex gap-2">
+          <div class="works">
+            <h4
+              class="mt-8 flex gap-2 text-[#62e0d9] border-b-[1px] border-[#62e0d9] w-max"
+            >
               See how Fylo works
               <img
                 src="images/icon-arrow.svg"
@@ -139,15 +141,32 @@
         </div>
       </section>
 
-      <section class="testimonials text-center">
-        <div class="testmonial-1">
+      <section
+        class="testimonials text-center m-auto flex flex-col gap-6 md:justify-between md:flex-row"
+      >
+        <div
+          class="testmonial-1 relative bg-[#21293c] p-6 grid gap-6 text-left rounded-xl max-w-[340px] z-2"
+        >
+          <img
+            src="images/bg-quotes.png"
+            alt="image quote"
+            width="30px"
+            height="30px"
+            class="absolute -top-[50px] -left-5 z-1 md:w-[60px] md:h-[60px]"
+          />
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
           machine.
 
-          <div class="people">
+          <div class="people flex gap-6">
             <div class="image">
-              <img src="images/profile-1.jpg" alt="image" class="flex m-auto" />
+              <img
+                src="images/profile-1.jpg"
+                alt="image"
+                width="40px"
+                height="40px"
+                class="flex m-auto rounded-full"
+              />
             </div>
             <div class="title">
               <h1>Bruce McKenzie</h1>
@@ -155,28 +174,47 @@
             </div>
           </div>
         </div>
-        <div class="testmonial-2">
+        <div
+          class="testmonial-2 bg-[#21293c] p-6 grid gap-6 text-left rounded-xl max-w-[340px]"
+        >
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
           machine.
 
-          <div class="people">
+          <div class="people flex gap-6">
             <div class="image">
-              <img src="images/profile-2.jpg" alt="image" class="flex m-auto" />
+              <img
+                src="images/profile-2.jpg"
+                alt="image"
+                width="40px"
+                height="40px"
+                class="flex m-auto rounded-full"
+              />
             </div>
-            <div class="title"></div>
+            <div class="title">
+              <h1>Bruce McKenzie</h1>
+              <h2>Founder & CEO, Huddle</h2>
+            </div>
           </div>
         </div>
-        <div class="testmonial-3">
+        <div
+          class="testmonial-3 bg-[#21293c] p-6 grid gap-6 text-left rounded-xl max-w-[340px]"
+        >
           <h1>
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </h1>
 
-          <div class="people">
+          <div class="people flex gap-6">
             <div class="image">
-              <img src="images/profile-3.jpg" alt="image" class="flex m-auto" />
+              <img
+                src="images/profile-3.jpg"
+                alt="image"
+                width="40px"
+                height="40px"
+                class="flex m-auto rounded-full"
+              />
             </div>
             <div class="title">
               <h1>Iva Boyd</h1>
@@ -186,15 +224,18 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="card">
+
+    <footer class="mt-[5rem] relative">
+      <div
+        class="absolute -top-[0%] left-[50%] -translate-x-[50%] -translate-y-[50%] card w-[80%] md:w-[60%] bg-[#3fb0d0] p-8 grid gap-8"
+      >
         <h1>Get early access today</h1>
         <h3>
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </h3>
-        <div></div>
+        <div class="flex h-12 w-[100%] bg-white rounded-3xl"></div>
         <button id="button" class="p-4 rounded-full">
           Get Started For Free
         </button>

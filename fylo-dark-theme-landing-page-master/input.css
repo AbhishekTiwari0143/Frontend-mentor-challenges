@@ -13,5 +13,6 @@ section {
 }
 
 button {
-  background-image: linear-gradient(to right, #50c6d4 25%, #50c6d4 100%);
+  background-image: linear-gradient(to right, #50c6d4 25%, #3fb0d0 100%);
+  /* background-image: linear-gradient(to right, #50c6d4 25%, #50c6d4 100%); */
 }
