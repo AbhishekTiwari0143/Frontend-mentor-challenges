@@ -14,5 +14,48 @@ section {
 
 button {
   background-image: linear-gradient(to right, #50c6d4 25%, #3fb0d0 100%);
-  /* background-image: linear-gradient(to right, #50c6d4 25%, #50c6d4 100%); */
+}
+button:hover {
+  font-size: 1.2rem;
+}
+.nav-links > li > a {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.nav-links > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+}
+.nav-links > li > a:hover::after {
+  width: 100%;
+}
+
+.works {
+  /* transition: all 4s; */
+  transform-origin: left;
+}
+.works > h4:hover > img {
+  transition: all 2s;
+  transform: rotate(-30deg);
+}
+.works > h4:hover {
+  animation: underline 5s ease;
+}
+
+@keyframes underline {
+  0% {
+    border-bottom-width: 100%;
+  }
+  50% {
+    border-bottom-width: 50%;
+  }
+  100% {
+    border-bottom-width: 0;
+  }
 }
