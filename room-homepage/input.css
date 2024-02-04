@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+  transition: top 0.3s;
+}
+
+.navigation {
+  transition: top 0.5s;
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+
+.show {
+  top: 0;
+}

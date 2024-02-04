@@ -27,102 +27,128 @@
     <link rel="stylesheet" href="css/output.css" />
   </head>
   <body>
-    <div class="relative">
-      <header class="container2 absolute top-10 left-0 flex z-10">
-        <img src="images/icon-hamburger.svg" alt="hamberger icon" />
-        <div class="logo w-[100vw] flex justify-center items-center">
+    <div class="relative container">
+      <header
+        class="absolute w-[100%] top-0 left-0 z-10 flex p-6 py-10 md:p-12"
+      >
+        <img
+          id="menu-open"
+          src="images/icon-hamburger.svg"
+          alt="hamberger icon"
+          class="cursor-pointer md:hidden"
+        />
+        <div
+          class="logo w-[100%] flex justify-center items-center md:justify-start md:w-max"
+        >
           <img src="images/logo.svg" alt="logo image" class="" />
         </div>
         <div
-          class="navigation container2 absolute top-0 left-0 bg-white text-black w-[100%] h-[100px] flex justify-between items-center"
+          id="navigation"
+          class="container navigation bg-white text-black w-[100%] h-[100px] flex justify-between px-6 items-center md:block md:bg-transparent md:relative md:items-center md:h-auto md:px-16 md:text-white"
         >
           <img
+            id="menu-close"
             src="images/icon-close.svg"
             alt="icon close"
-            class="object-contain"
+            class="object-contain cursor-pointer md:hidden"
           />
-          <ul class="flex gap-4">
-            <li><a href="#">home</a></li>
-            <li><a href="#">shop</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
+          <ul class="flex gap-6">
+            <li class="font-bold"><a href="#">home</a></li>
+            <li class="font-bold"><a href="#">shop</a></li>
+            <li class="font-bold"><a href="#">about</a></li>
+            <li class="font-bold"><a href="#">contact</a></li>
           </ul>
         </div>
       </header>
-      <main>
-        <div class="landing mb-8">
-          <img
-            src="images/mobile-image-hero-1.jpg"
-            alt="image mobile"
-            class="w-[100%]"
-          />
-          <div class="buttonCover relative">
-            <div
-              class="buttons absolute bottom-0 right-0 flex p-4 gap-12 bg-black"
-            >
+    </div>
+    <main>
+      <div
+        id="overlay"
+        class="hidden bg-[#0000008e] fixed top-0 left-0 z-5 w-[100%] h-[100%]"
+      ></div>
+      <div class="container landing mb-8 md:flex md:mb-0">
+        <img
+          id="imageMobile"
+          src="images/mobile-image-hero-1.jpg"
+          alt="image mobile"
+          class="w-[100%] md:hidden"
+        />
+        <img
+          id="imageDesktop"
+          src="images/desktop-image-hero-1.jpg"
+          alt="image desktop"
+          class="w-[100%] hidden md:block"
+        />
+        <div class="buttonCover relative">
+          <div
+            class="buttons absolute bottom-0 right-0 flex p-4 gap-12 cursor-pointer bg-black md:-right-[108px]"
+          >
+            <div class="cursor-pointer" id="left">
               <img
                 src="images/icon-angle-left.svg"
                 alt="button left"
-                class="cursor-pointer"
+                class="max-w-none"
               />
+            </div>
+            <div class="cursor-pointer" id="right">
               <img
                 src="images/icon-angle-right.svg"
                 alt="button right"
-                class="cursor-pointer"
+                class="max-w-none"
               />
             </div>
           </div>
-          <div class="container py-12">
-            <h1 class="text-4xl font-bold py-4">
-              Discover innovative ways to decorate
+        </div>
+        <div class="container py-12 px-6 md:px-16 md:my-16">
+          <h1 id="title" class="text-4xl font-bold py-4">
+            Discover innovative ways to decorate
+          </h1>
+          <p id="paragraph" class="text-[0.89rem] text-gray-600 mb-8">
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <div class="flex gap-4">
+            <h1
+              class="text-[0.8] tracking-[.6rem] uppercase leading-3 font-semibold leading-4"
+            >
+              Shop now
             </h1>
-            <p class="text-[0.89rem] text-gray-600 mb-8">
-              We provide unmatched quality, comfort, and style for property
-              owners across the country. Our experts combine form and function
-              in bringing your vision to life. Create a room in your own style
-              with our collection and make your property a reflection of you and
-              what you love.
-            </p>
-            <div class="flex gap-4">
-              <h1
-                class="text-[0.8] tracking-[.6rem] uppercase leading-3 font-semibold"
-              >
-                Shop now
-              </h1>
-              <img src="images/icon-arrow.svg" alt="icon arrow" />
-            </div>
+            <img src="images/icon-arrow.svg" alt="icon arrow" />
           </div>
         </div>
-        <div class="landing-2">
-          <img src="images/image-about-dark.jpg" alt="image dark" />
+      </div>
+      <div class="container landing-2 md:flex">
+        <img
+          src="images/image-about-dark.jpg"
+          alt="image dark"
+          class="flex w-[100vw] justify-center"
+        />
 
-          <div class="container py-6">
-            <h1 class="text-[.8rem] font-bold py-4 tracking-[.46rem] uppercase">
-              About our furniture
-            </h1>
-            <p class="text-[0.89rem] text-gray-600 mb-8">
-              Our multifunctional collection blends design and function to suit
-              your individual taste. Make each room unique, or pick a cohesive
-              theme that best express your interests and what inspires you. Find
-              the furniture pieces you need, from traditional to contemporary
-              styles or anything in between. Product specialists are available
-              to help you create your dream space.
-            </p>
-          </div>
-          <img src="images/image-about-light.jpg" alt="image light" />
+        <div class="container p-6">
+          <h1 class="text-[.8rem] font-bold py-4 tracking-[.46rem] uppercase">
+            About our furniture
+          </h1>
+          <p class="text-[0.89rem] text-gray-600 mb-8">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
         </div>
-      </main>
-    </div>
-    <!-- Home Shop About Contact    We are available
-    all across the globe With stores all over the world, it's easy for you to
-    find furniture for your home or place of business. Locally, we’re in most
-    major cities throughout the country. Find the branch nearest you using our
-    store locator. Any questions? Don't hesitate to contact us today. Shop now
-    Manufactured with the best materials Our modern furniture store provide a
-    high level of quality. Our company has invested in advanced technology to
-    ensure that every product is made as perfect and as consistent as possible.
-    With three decades of experience in this industry, we understand what
-    customers want for their home and office. Shop now   -->
+        <img
+          src="images/image-about-light.jpg"
+          alt="image light"
+          class="flex w-[100vw] justify-center"
+        />
+      </div>
+    </main>
+    <!-- Home Shop About Contact
+      Shop now   -->
 
     <div class="attribution">
       Challenge by
@@ -130,5 +156,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
