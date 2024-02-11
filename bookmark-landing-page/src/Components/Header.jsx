@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="relative flex max-w-[1440px] m-auto justify-between py-16 px-6">
+      <header className="relative flex max-w-[1170px] m-auto justify-between py-16 px-6">
         {!menuOpen && (
           <div className="logo flex justify-between items-center w-full">
             <img
@@ -29,13 +29,13 @@ const Header = () => {
             <img
               src={menu}
               alt="menu logo"
-              className="object-contain"
+              className="object-contain md:hidden"
               onClick={menuToggle}
             />
           </div>
         )}
-        <div className="nav-links text-xl hidden">
-          <ul className="flex text-lg gap-12 items-center tracking-[.2rem] uppercase">
+        <div className="nav-links text-xl hidden md:block">
+          <ul className="flex text-lg gap-12 items-center tracking-[.2rem] uppercase md:text-[1rem] ">
             <li>
               <a href="#">Features</a>
             </li>
