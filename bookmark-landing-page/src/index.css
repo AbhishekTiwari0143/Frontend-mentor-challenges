@@ -7,8 +7,27 @@
   --soft-red: hsl(0, 94%, 66%);
   --grayish-blue: hsl(229, 8%, 60%);
   --very-dark-blue: hsl(229, 31%, 21%);
+  --very-dark-blue-t: hsla(229, 31%, 21%, 0.925);
 }
 
 .box-shadow {
   box-shadow: 0 5px 10px #0000001a;
+}
+
+body {
+  /* font-size: 1.5rem; */
+  line-height: 1.2;
+  transition: all 0.5s;
+}
+
+section {
+  /* padding: 10rem 0; */
+}
+.footer-logo {
+  fill: white;
+  stroke: white;
+}
+
+.mob-links > li {
+  border-color: #ffffff1a;
 }

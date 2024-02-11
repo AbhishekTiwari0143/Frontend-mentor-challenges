@@ -76,3 +76,6 @@ const init = () => {
   imageDesktop.src = newImageDesktop;
   imageMobile.src = newImageMobile;
 };
+
+gsap.to("#left", { rotation: 27, x: 50, duration: 1 });
+gsap.to("#right", { rotation: 27, x: -50, duration: 1 });

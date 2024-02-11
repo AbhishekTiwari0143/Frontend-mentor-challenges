@@ -1,5 +1,4 @@
 import "./App.css";
-
 import {
   Download,
   FAQs,
@@ -8,7 +7,7 @@ import {
   Header,
   Main,
   Newsletter,
-} from "./Components/index";
+} from "./Components";
 
 function App() {
   return (
