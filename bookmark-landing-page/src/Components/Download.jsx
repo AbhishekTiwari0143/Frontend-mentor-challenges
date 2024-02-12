@@ -5,9 +5,11 @@ import firefox from "../assets/images/logo-firefox.svg";
 import opera from "../assets/images/logo-opera.svg";
 
 const Download = () => (
-  <section className="downloads w-[100%] my-16 px-8">
+  <section className="downloads w-[100%] my-[10rem] px-8">
     <div className="title text-center">
-      <h1 className="text-2xl font-medium pb-4">Download the extension</h1>
+      <h1 className="text-2xl font-medium pb-4 md:text-4xl">
+        Download the extension
+      </h1>
       <p className="text-gray-600 ">
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
         got a favourite you’d like us to prioritize.

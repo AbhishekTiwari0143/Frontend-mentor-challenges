@@ -3,10 +3,37 @@
 // Contact
 // Login
 
+import featureImage1 from "../assets/images/illustration-features-tab-1.svg";
+import featureImage2 from "../assets/images/illustration-features-tab-2.svg";
+import featureImage3 from "../assets/images/illustration-features-tab-3.svg";
+
+export const feature = [
+  {
+    id: 1,
+    image: featureImage1,
+    title: "Bookmark in one click",
+    subtitle:
+      "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
+  },
+  {
+    id: 2,
+    image: featureImage2,
+    title: "Intelligent search",
+    subtitle:
+      "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
+  },
+  {
+    id: 3,
+    image: featureImage3,
+    title: "Share your bookmarks",
+    subtitle:
+      "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
+  },
+];
+
 // A Simple Bookmark Manager
 
-// A clean and simple interface to organize your favourite websites. Open a new
-// browser tab and see your sites load instantly. Try it for free.
+// A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
 
 // Get it on Chrome
 // Get it on Firefox
@@ -22,22 +49,19 @@
 
 // Bookmark in one click
 
-// Organize your bookmarks however you like. Our simple drag-and-drop interface
-// gives you complete control over how you manage your favourite sites.
+// Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
 
 // More Info
 
 // Intelligent search
 
-// Our powerful search feature will help you find saved sites in no time at all.
-// No need to trawl through all of your bookmarks.
+// Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
 
 // More Info
 
 // Share your bookmarks
 
-// Easily share your bookmarks and collections with others. Create a shareable
-// link that you can send at the click of a button.
+// Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
 
 // More Info
 
@@ -62,7 +86,7 @@
 
 // Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
 
-export const FAQ = [
+export const FAQquestions = [
   {
     id: 1,
     question: "What is Bookmark?",
