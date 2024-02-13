@@ -12,14 +12,14 @@ export default function Feature({ value }) {
           value === item.id && (
             <li
               key={item.id}
-              className="flex flex-col text-center md:w-[1070px] max-w-[1440px] gap-12 m-auto mt-12 md:flex-row md:text-left"
+              className="flex flex-col text-center lg:w-[1070px] max-w-[1440px] gap-12 m-auto mt-12 lg:flex-row lg:text-left"
             >
               <img
                 src={item.image}
                 alt="image"
                 className="w-[80%] m-auto object-contain md:w-auto"
               />
-              <div className="text flex flex-col gap-6 justify-center items-center md:items-start md:gap-8 md:w-[50%] ">
+              <div className="text flex flex-col gap-6 justify-center items-center lg:items-start md:gap-8 md:w-[50%] m-auto ">
                 <h1 className="text-2xl font-semibold md:text-4xl">
                   {item.title}
                 </h1>

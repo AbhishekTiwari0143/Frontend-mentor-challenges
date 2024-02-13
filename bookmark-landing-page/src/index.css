@@ -15,13 +15,8 @@
 }
 
 body {
-  /* font-size: 1.5rem; */
   line-height: 1.2;
   transition: all 0.5s;
-}
-
-section {
-  /* padding: 10rem 0; */
 }
 .footer-logo {
   fill: white;
