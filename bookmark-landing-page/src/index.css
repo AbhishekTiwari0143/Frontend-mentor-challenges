@@ -31,3 +31,7 @@ section {
 .mob-links > li {
   border-color: #ffffff1a;
 }
+
+.social-icon {
+  fill: var(--soft-red);
+}

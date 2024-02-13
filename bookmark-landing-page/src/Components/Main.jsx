@@ -1,4 +1,5 @@
 import mainImage from "../assets/images/illustration-hero.svg";
+import Button from "./utilities/Button";
 
 const Main = () => (
   <section className="flex flex-col-reverse items-center max-w-[1170px] m-auto md:flex-row md:mt-8 md:mb-16">
@@ -11,15 +12,10 @@ const Main = () => (
         new tab and see your sites load instantly. Try it for free.
       </p>
       <div className="download flex gap-2">
+        <Button title="Get it on Chrome" />
         <button
           type="button"
-          className="px-4 py-2 rounded-lg text-white font-medium text-base bg-[--soft-blue] box-shadow"
-        >
-          Get it on Chrome
-        </button>
-        <button
-          type="button"
-          className="px-4 py-2 rounded-lg font-medium text-base box-shadow"
+          className="px-4 py-2 rounded-lg font-medium text-base box-shadow outline-2 hover:outline hover:outline-[black]"
         >
           Get it on Firefox
         </button>

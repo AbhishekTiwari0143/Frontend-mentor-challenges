@@ -35,20 +35,26 @@ const Header = () => {
           </div>
         )}
         <div className="nav-links text-xl hidden md:block">
-          <ul className="flex text-lg gap-12 items-center tracking-[.2rem] uppercase md:text-[1rem] ">
+          <ul className="flex text-base gap-12 items-center tracking-[.2rem] uppercase md:text-[1rem] ">
             <li>
-              <a href="#">Features</a>
+              <a className="hover:text-[--soft-red]" href="#">
+                Features
+              </a>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <a className="hover:text-[--soft-red]" href="#">
+                Pricing
+              </a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a className="hover:text-[--soft-red]" href="#">
+                Contact
+              </a>
             </li>
             <li>
               <button
                 type="button"
-                className="bg-[--soft-red] text-white font-semibold px-8 py-2 box-shadow rounded-lg"
+                className="bg-[--soft-red] text-white font-semibold px-8 py-2 box-shadow rounded-lg hover:text-[--soft-red] hover:font-normal outline-1 hover:outline hover:outline-[--soft-red] hover:bg-white"
               >
                 Login
               </button>

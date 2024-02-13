@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const DownloadCard = ({ name, version, image }) => (
   <div className="card text-center my-12 box-shadow p-4 rounded-2xl h-max">
     <img src={image} alt={`image ${name}`} className="m-auto mb-8" />
@@ -6,11 +8,12 @@ const DownloadCard = ({ name, version, image }) => (
       <p className="text-lg text-gray-400">Minimum version {version}</p>
     </div>
 
-    <div className="button my-6 bg-[--soft-blue] p-4 rounded-xl box-shadow md:px-12">
-      <h1 className="text-white text-xl font-semibold">
+    {/* <div className="button my-6 bg-[--soft-blue] p-4 rounded-xl box-shadow md:px-12"> */}
+    {/* <h1 className="text-white text-xl font-semibold">
         Add & Install Extension
-      </h1>
-    </div>
+      </h1> */}
+    <Button title="Add & Install Extension" />
+    {/* </div> */}
   </div>
 );
 

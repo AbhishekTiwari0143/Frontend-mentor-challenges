@@ -1,3 +1,4 @@
+import Button from "./utilities/Button";
 import QuestionCard from "./utilities/QUestionCard";
 
 const FAQs = () => (
@@ -12,9 +13,7 @@ const FAQs = () => (
           answered please feel free to email us.
         </p>
         <QuestionCard />
-        <button className="text-lg bg-[--soft-blue] py-2 text-white font-semibold px-6 rounded-lg flex justify-center m-auto mt-12">
-          More Info
-        </button>
+        <Button title="More Info" />
       </div>
     </section>
   </>
