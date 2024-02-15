@@ -13,12 +13,10 @@ function App() {
   return (
     <>
       <Header />
-      {/* <div className="wrapper max-w-[1440px] m-auto "> */}
       <Main />
       <Features />
       <Download />
       <FAQs />
-      {/* </div> */}
       <Newsletter />
       <Footer />
     </>
