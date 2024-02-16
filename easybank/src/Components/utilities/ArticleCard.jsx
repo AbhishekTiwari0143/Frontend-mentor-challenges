@@ -15,7 +15,9 @@ const ArticleCard = () => {
               <h6 className="text-[.9rem] text-gray-500">
                 {article.subHeading}
               </h6>
-              <h1 className="text-[1.4rem] leading-6">{article.heading}</h1>
+              <h1 className="text-[1.4rem] leading-6 cursor-pointer hover:text-[--BrightCyan]">
+                {article.heading}
+              </h1>
               <p className="text-gray-500">{article.info}</p>
             </div>
           </div>

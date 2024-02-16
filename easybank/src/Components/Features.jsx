@@ -3,7 +3,7 @@ import FeatureCard from "./utilities/FeatureCard";
 const Features = () => {
   return (
     <>
-      <section className="features bg-[#f4f5f7] relative md:-z-10">
+      <section className="features bg-[--LightGrayishBlue] relative -z-10">
         <div className="max-w-[1170px] m-auto w-full my-20 p-6 md:my-4">
           <div className="text text-center md:text-left">
             <h1 className="text-4xl text-[#2e3050]">

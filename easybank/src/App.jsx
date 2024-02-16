@@ -7,7 +7,7 @@ function App() {
       <Main />
       <Features />
       <Articles />
-      <div className="footerbg bg-slate-800">
+      <div className="footerbg bg-[--DarkBlue]">
         <Footer />
       </div>
     </>

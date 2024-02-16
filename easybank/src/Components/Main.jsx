@@ -7,7 +7,9 @@ const Main = () => {
     <>
       <section className="main max-w-[1170px] m-auto flex flex-col-reverse relative text-[#2e3050] md:flex-row md:items-center">
         <div className="text px-6 flex flex-col items-center gap-6 text-center md:text-left md:items-start md:max-w-[500px]">
-          <h1 className="text-5xl ">Next generation digital banking</h1>
+          <h1 className="text-4xl md:text-5xl ">
+            Next generation digital banking
+          </h1>
           <p className="text-[1.1rem] text-gray-400">
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
@@ -21,7 +23,7 @@ const Main = () => {
           <img
             src={mainImage}
             alt="main Image"
-            className="absolute -top-28 -z-[1] md: lg:-right-44"
+            className="main-image absolute -top-28 -z-[2] lg:-right-44"
           />
           <img
             src={mainBgImage}
