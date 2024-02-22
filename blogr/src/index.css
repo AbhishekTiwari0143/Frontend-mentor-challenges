@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* (CTA text) */
+  --Light-red: hsl(356, 100%, 66%);
+  /* (CTA hover background) */
+  --Very-light-red: hsl(355, 100%, 74%);
+  /* (headings) */
+  --Very-dark-blue: hsl(208, 49%, 24%);
+
+  /* ### Neutral */
+
+  /* (text) */
+  --White: hsl(0, 0%, 100%);
+  /* (footer text) */
+  --Grayish-blue: hsl(240, 2%, 79%);
+  /* (body copy) */
+  --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+  /* (footer background) */
+  --Very-dark-black-blue: hsl(240, 10%, 16%);
+
+  /* ### Gradient */
+
+  /* Background gradient - Intro/CTA mobile nav: */
+  --Very-light-red: hsl(13, 100%, 72%);
+  --Light-red: hsl(353, 100%, 62%);
+
+  /* Background gradient - body: */
+
+  --Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+.gradient-blue {
+  background: linear-gradient(
+    162deg,
+    hsl(237, 17%, 21%) 100%,
+    hsl(237, 23%, 32%) 50%
+  );
+}
+
+body {
+  font-size: 16px;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.overpass-light {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.overpass-semibold {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.gradient {
+  background: linear-gradient(
+    162deg,
+    hsl(13, 100%, 72%) 25%,
+    hsl(356, 100%, 66%) 50%
+  );
+}
+
+.title > img {
+  transform: scale(2);
+}
+.pattern {
+  transform: scale(1.5);
+  z-index: -1;
+}
