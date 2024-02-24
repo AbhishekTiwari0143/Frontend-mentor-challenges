@@ -1,5 +1,4 @@
 import {
-  Header,
   Main,
   Feature,
   Infrastructure,
@@ -9,7 +8,6 @@ import {
 function App() {
   return (
     <>
-      <Header />
       <Main />
       <Feature />
       <Infrastructure />
