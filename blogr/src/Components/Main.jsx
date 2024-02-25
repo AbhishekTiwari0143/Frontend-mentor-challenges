@@ -5,7 +5,7 @@ import Header from "./Header";
 const Main = () => {
   return (
     <>
-      <div className=" overflow-hidden gradient">
+      <div className="overflow-hidden gradient">
         <Header />
         <div className="main py-28 rounded-bl-[7rem]">
           {/* <div className="container mx-auto"> */}
@@ -28,10 +28,10 @@ const Main = () => {
                 Grow your audience and build your online brand
               </p>
               <div className="buttons flex flex-row gap-4 font-semibold py-6">
-                <button className="text-[--Light-red] bg-[#ffffff] px-4 py-2 rounded-3xl">
+                <button className="text-[--Light-red] bg-[#ffffff] px-4 py-2 rounded-3xl hover:bg-[#ffffffa4] hover:text-white">
                   Start for Free
                 </button>
-                <button className="text-[#ffffff] border-[1px] border-[#ffffff] px-4 py-2 bg-transparent rounded-3xl">
+                <button className="text-[#ffffff] border-[1px] border-[#ffffff] px-4 py-2 bg-transparent rounded-3xl hover:bg-white hover:text-black">
                   Learn More
                 </button>
               </div>

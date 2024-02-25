@@ -101,3 +101,8 @@ body {
 .nav-links {
   transition: all 0.3s;
 }
+.hover-btn:hover {
+  background: transparent;
+  /* backdrop-filter: blur; */
+  background-color: #f1f1f11a;
+}
