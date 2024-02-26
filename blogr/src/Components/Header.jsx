@@ -7,7 +7,6 @@ import { useState } from "react";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [isActiveLink, setIsActiveLink] = useState(false);
 
   return (
     <>
@@ -31,52 +30,58 @@ const Header = () => {
           </div>
           <div className="hidden nav-links md:flex justify-between items-center w-full text-white z-30">
             <ul className="flex gap-12">
-              <li
-                className="flex gap-2 relative"
-                onClick={() => {
-                  setIsActiveLink((prev) => !prev);
-                }}
-              >
+              <li className="nav-link flex gap-2 relative">
                 <a href="#">Product</a>
                 <img
                   src={downWhite}
                   alt="image down"
-                  className="object-contain "
+                  className="object-contain"
                 />
                 <ul
-                  className={`absolute top-[30px] bg-[--White] text-black w-32 px-6 -left-4 box-shadow`}
+                  className={`h-0 opacity-0 py-2 absolute top-[30px] bg-[--White] text-black w-32 px-6 -left-4 box-shadow`}
                 >
-                  <li className="h-full">Contact</li>
-                  <li className="h-full">Newsletter</li>
-                  <li className="h-full">LinkedIn</li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Overview
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Pricing
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Marketplace
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Features
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Integrations
+                  </li>
                 </ul>
               </li>
-              <li
-                className="flex gap-2 relative"
-                onClick={() => {
-                  setIsActiveLink((prev) => !prev);
-                }}
-              >
+              <li className="nav-link flex gap-2 relative">
                 <a href="#">Company</a>
                 <img
                   src={downWhite}
                   alt="image down"
-                  className="object-contain "
+                  className="object-contain"
                 />
                 <ul
-                  className={`absolute top-[30px] bg-[--White] text-black w-32 px-6 -left-4 box-shadow`}
+                  className={`h-0 opacity-0 py-2 absolute top-[30px] bg-[--White] text-black w-32 px-6 -left-4 box-shadow`}
                 >
-                  <li className="h-full">Contact</li>
-                  <li className="h-full">Newsletter</li>
-                  <li className="h-full">LinkedIn</li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    About
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Team
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Blog
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Careers
+                  </li>
                 </ul>
               </li>
-              <li
-                className="flex gap-2 relative"
-                onClick={() => {
-                  setIsActiveLink((prev) => !prev);
-                }}
-              >
+              <li className="nav-link flex gap-2 relative">
                 <a href="#">Connect</a>
                 <img
                   src={downWhite}
@@ -84,11 +89,17 @@ const Header = () => {
                   className="object-contain"
                 />
                 <ul
-                  className={`absolute top-[30px] bg-[--White] text-black w-32 px-6 -left-4 box-shadow`}
+                  className={`h-0 opacity-0 py-2 absolute top-[30px] bg-[--White] text-black w-32 px-6 -left-4 box-shadow`}
                 >
-                  <li className="h-full">Contact</li>
-                  <li className="h-full">Newsletter</li>
-                  <li className="h-full">LinkedIn</li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Contact
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    Newsletter
+                  </li>
+                  <li className="h-full cursor-pointer hover:font-semibold">
+                    LinkedIn
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -106,29 +117,59 @@ const Header = () => {
             <div className="nav-box absolute left-0 top-[6rem] w-full px-4 z-50">
               <nav className="relative w-full bg-[--White] rounded-md py-8">
                 <ul className="nav-links flex flex-col items-center justify-center gap-4 w-full ">
-                  <li className="flex gap-2 cursor-pointer hover:underline hover:font-bold">
-                    Product
-                    <img
-                      src={downArrow}
-                      alt="image down"
-                      className="object-contain"
-                    />
+                  <li className="relative nav-link">
+                    <div className="flex gap-2 cursor-pointer hover:underline hover:font-bold">
+                      Product
+                      <img
+                        src={downArrow}
+                        alt="image down"
+                        className="object-contain"
+                      />
+                    </div>
+                    <ul className="grid place-items-center h-0 opacity-0">
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        Overview
+                      </li>
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        Pricing
+                      </li>
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        Marketplace
+                      </li>
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        Features
+                      </li>
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        Integrations
+                      </li>
+                    </ul>
                   </li>
-                  <li className="flex gap-2 cursor-pointer hover:underline hover:font-bold">
-                    Company
-                    <img
-                      src={downArrow}
-                      alt="image down"
-                      className="object-contain"
-                    />
+                  <li className="nav-link relative">
+                    <div className="flex gap-2 cursor-pointer hover:underline hover:font-bold">
+                      Company
+                      <img
+                        src={downArrow}
+                        alt="image down"
+                        className="object-contain"
+                      />
+                    </div>
+                    <ul className="grid place-items-center h-0 opacity-0">
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        About
+                      </li>
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        Team
+                      </li>
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        Blog
+                      </li>
+                      <li className="h-full cursor-pointer hover:font-semibold">
+                        Careers
+                      </li>
+                    </ul>
                   </li>
-                  <li className="w-full px-6">
-                    <div
-                      className="flex items-center justify-center gap-2 mb-2 cursor-pointer hover:underline hover:font-bold"
-                      onClick={() => {
-                        setIsActiveLink((prev) => !prev);
-                      }}
-                    >
+                  <li className="w-full px-6 relative nav-link">
+                    <div className="flex items-center justify-center gap-2 mb-2 cursor-pointer hover:underline hover:font-bold">
                       Connect
                       <img
                         src={downArrow}
@@ -136,27 +177,17 @@ const Header = () => {
                         className="object-contain"
                       />
                     </div>
-                    <div className="linkOpen relative">
-                      {isActiveLink && (
-                        <ul
-                          className={`bg-slate-200 w-full text-gray-700 rounded-lg flex-col items-center overflow-hidden flex py-2 gap-2 ${
-                            isActiveLink
-                              ? "opacity-100 scale-y-100"
-                              : "opacity-10 scale-y-50"
-                          }`}
-                        >
-                          <li className="cursor-pointer hover:font-bold">
-                            Contact
-                          </li>
-                          <li className="cursor-pointer hover:font-bold">
-                            Newsletter
-                          </li>
-                          <li className="cursor-pointer hover:font-bold">
-                            LinkedIn
-                          </li>
-                        </ul>
-                      )}
-                    </div>
+                    <ul className="grid place-items-center h-0 opacity-0">
+                      <li className="cursor-pointer hover:font-bold">
+                        Contact
+                      </li>
+                      <li className="cursor-pointer hover:font-bold">
+                        Newsletter
+                      </li>
+                      <li className="cursor-pointer hover:font-bold">
+                        LinkedIn
+                      </li>
+                    </ul>
                   </li>
                 </ul>
                 <div className="px-6">

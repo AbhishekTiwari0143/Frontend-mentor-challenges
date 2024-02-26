@@ -103,6 +103,10 @@ body {
 }
 .hover-btn:hover {
   background: transparent;
-  /* backdrop-filter: blur; */
   background-color: #f1f1f11a;
+}
+
+.nav-link:hover > ul {
+  height: max-content;
+  opacity: 1;
 }
