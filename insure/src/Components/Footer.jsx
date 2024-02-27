@@ -40,16 +40,24 @@ const Footer = () => {
               </h4>
               <ul className="text-center grid gap-2 uppercase text-sm font-bold Karla md:text-left">
                 <li>
-                  <a href="javacript;">how we work</a>
+                  <a href="javacript;" className="hover:underline">
+                    how we work
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Why Insure?</a>
+                  <a href="javacript;" className="hover:underline">
+                    Why Insure?
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">View plans</a>
+                  <a href="javacript;" className="hover:underline">
+                    View plans
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Reviews</a>
+                  <a href="javacript;" className="hover:underline">
+                    Reviews
+                  </a>
                 </li>
               </ul>
             </div>
@@ -59,16 +67,24 @@ const Footer = () => {
               </h4>
               <ul className="text-center grid gap-2 uppercase text-sm font-bold Karla md:text-left">
                 <li>
-                  <a href="javacript;">FAQ</a>
+                  <a href="javacript;" className="hover:underline">
+                    FAQ
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Terms of use</a>
+                  <a href="javacript;" className="hover:underline">
+                    Terms of use
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Prvacy policy</a>
+                  <a href="javacript;" className="hover:underline">
+                    Prvacy policy
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Cookies</a>
+                  <a href="javacript;" className="hover:underline">
+                    Cookies
+                  </a>
                 </li>
               </ul>
             </div>
@@ -78,13 +94,19 @@ const Footer = () => {
               </h4>
               <ul className="text-center grid gap-2 uppercase text-sm font-bold Karla md:text-left">
                 <li>
-                  <a href="javacript;">Sales</a>
+                  <a href="javacript;" className="hover:underline">
+                    Sales
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Support</a>
+                  <a href="javacript;" className="hover:underline">
+                    Support
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Live Chat</a>
+                  <a href="javacript;" className="hover:underline">
+                    Live Chat
+                  </a>
                 </li>
               </ul>
             </div>
@@ -94,13 +116,19 @@ const Footer = () => {
               </h4>
               <ul className="text-center grid gap-2 uppercase text-sm font-bold Karla md:text-left">
                 <li>
-                  <a href="javacript;">Careers</a>
+                  <a href="javacript;" className="hover:underline">
+                    Careers
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Press</a>
+                  <a href="javacript;" className="hover:underline">
+                    Press
+                  </a>
                 </li>
                 <li>
-                  <a href="javacript;">Licenses</a>
+                  <a href="javacript;" className="hover:underline">
+                    Licenses
+                  </a>
                 </li>
               </ul>
             </div>

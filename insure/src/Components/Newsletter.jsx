@@ -19,7 +19,7 @@ const Newsletter = () => {
           <h1 className="text-5xl DM-serif md:text-7xl">
             Find out more <br className="hidden md:block" /> about how we work
           </h1>
-          <button className="uppercase border-white border-2 px-4 py-2 w-max m-auto tracking-widest cursor-pointer ">
+          <button className="uppercase border-white border-2 px-4 py-2 w-max m-auto tracking-widest cursor-pointer hover:bg-white hover:text-black hover:font-medium z-10">
             How we Work
           </button>
         </div>

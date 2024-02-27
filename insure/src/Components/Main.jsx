@@ -40,7 +40,7 @@ const Main = () => {
                 expertise and technology to help you find the plan that’s right
                 for you. Ensure you and your loved ones are protected.
               </p>
-              <button className="border-2 border-white px-4 py-1 w-max m-auto font-light text-xl md:">
+              <button className="border-2 border-white px-4 py-1 w-max m-auto font-light text-xl hover:bg-white hover:text-black hover:font-medium">
                 View plans
               </button>
               <img

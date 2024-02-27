@@ -27,7 +27,7 @@ const Header = () => {
             />
             {isActive && (
               <div className="nav-link">
-                <ul className="h-screen fixed top-20 w-full left-1/2 -translate-x-1/2 bg-[--Very-Dark-Violet] z-20 flex flex-col items-center py-8 gap-8 text-white Karla uppercase tracking-wide  ">
+                <ul className="h-screen fixed top-20 w-full left-1/2 -translate-x-1/2 bg-[--Very-Dark-Violet] z-20 flex flex-col items-center py-8 gap-8 text-white Karla uppercase tracking-wide ">
                   <li>
                     <a href="#">How we work</a>
                   </li>
@@ -49,16 +49,16 @@ const Header = () => {
           </div>
           <div className="nav-link hidden md:block">
             <ul className="flex gap-8 uppercase items-center text-[--Grayish-Blue] Karla">
-              <li>
+              <li className="hover:text-black">
                 <a href="#">How we work</a>
               </li>
-              <li>
+              <li className="hover:text-black">
                 <a href="#">Blog</a>
               </li>
-              <li>
+              <li className="hover:text-black">
                 <a href="#">Account</a>
               </li>
-              <li className="border-2 border-black px-6 py-2 text-black">
+              <li className="border-2 border-black px-6 py-2 text-black hover:text-white hover:bg-black">
                 <a href="#">View Plans</a>
               </li>
             </ul>
