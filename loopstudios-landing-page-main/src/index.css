@@ -28,3 +28,9 @@ body {
   font-weight: 300;
   font-style: normal;
 }
+.mobile-nav {
+  transition: all 0.2s linear;
+}
+.show {
+  top: 0;
+}
