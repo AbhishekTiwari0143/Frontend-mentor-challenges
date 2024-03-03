@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import bookRoute from "./routes/bookRoute.js";
 import cors from "cors";
 import sellingRoute from "./routes/sellingRoute.js";
+import bugCureUserRoute from './routes/bugCureUserRoute.js'
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.get("/home", (request, response) => {
 
 app.use("/books", bookRoute);
 app.use("/app", sellingRoute);
+app.use('/bugcure', bugCureUserRoute);
 
 const PORT = process.env.PORT || 5555;
 

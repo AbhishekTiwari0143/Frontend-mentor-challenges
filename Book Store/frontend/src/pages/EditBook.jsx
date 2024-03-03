@@ -14,16 +14,21 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:5555/books/${id}`).then((response) => {
-      setTitle(response.data.title);
-      setAuthor(response.data.author);
-      setPublishYear(response.data.publishYear);
-      setLoading(false)
-    }).catch(error => {
-      setLoading(false)
-      alert('Loading Error, Please Check Console')
-      console.log(error);
-    })
+    axios
+      .get(
+        `https://frontend-mentor-challenges-production.up.railway.app/books/${id}`
+      )
+      .then((response) => {
+        setTitle(response.data.title);
+        setAuthor(response.data.author);
+        setPublishYear(response.data.publishYear);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setLoading(false);
+        alert("Loading Error, Please Check Console");
+        console.log(error);
+      });
   }, []);
 
   const handleEditBook = () => {
@@ -34,7 +39,10 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:5555/books/${id}`, data)
+      .put(
+        `https://frontend-mentor-challenges-production.up.railway.app/${id}`,
+        data
+      )
       .then(() => {
         setLoading(false);
         navigate("/");

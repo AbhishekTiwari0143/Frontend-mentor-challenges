@@ -19,7 +19,7 @@ const CreateBook = () => {
     };
     setLoading(true);
     axios
-      .post("http://localhost:5555/books", data)
+      .post("https://frontend-mentor-challenges-production.up.railway.app/books", data)
       .then(() => {
         setLoading(false);
         navigate("/");
