@@ -1,8 +1,10 @@
-import { PORT, MongoURI } from "./config.js";
+import "dotenv/config";
+
 import express from "express";
 import mongoose from "mongoose";
 import bookRoute from "./routes/bookRoute.js";
 import cors from "cors";
+import sellingRoute from "./routes/sellingRoute.js";
 
 const app = express();
 
@@ -22,12 +24,15 @@ app.get("/home", (request, response) => {
 });
 
 app.use("/books", bookRoute);
+app.use("/app", sellingRoute);
+
+const PORT = process.env.PORT || 5555;
 
 mongoose
-  .connect(MongoURI)
+  .connect(process.env.MongoURI)
   .then(() => {
     app.listen(PORT, () => {
-      console.log(`App is listening`);
+      console.log(`App is listening at port: ${process.env.PORT}`);
     });
     console.log("App is Connected");
   })
