@@ -28,7 +28,7 @@ app.get("/home", (request, response) => {
 app.use("/books", bookRoute);
 app.use("/app", sellingRoute);
 app.use("/bugcure", bugCureUserRoute);
-app.use("./todouser", TodoRoute);
+app.use("/todouser", TodoRoute);
 
 const PORT = process.env.PORT || 5555;
 

@@ -19,4 +19,17 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.get("/", async (request, response) => {
+  try {
+    const todos = await TodoUser.find({});
+    return response.json({
+      length: todos.length,
+      data: todos,
+    });
+  } catch (error) {
+    console.log(error.message);
+    response.status(500).send({ message: error.message });
+  }
+});
+
 export default router;
