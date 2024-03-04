@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="right">
-            <div className="social-links flex gap-4 md:justify-end mb-6">
+            <div className="social-links flex gap-4 justify-center md:justify-end mb-6">
               <img src={facebook} alt="facebook" />
               <img src={twitter} alt="twitter" />
               <img src={pinterest} alt="pinterest" />

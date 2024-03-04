@@ -5,7 +5,7 @@ const Feature = () => {
   return (
     <>
       <section className="feature my-24 md:flex md:container m-auto px-6 relative md:my-32">
-        <div className="image grid place-items-center md:px-0">
+        <div className="grid place-items-center md:px-0">
           <img src={featureImgM} alt="feature image" className="lg:hidden" />
           <img
             src={featureImgD}

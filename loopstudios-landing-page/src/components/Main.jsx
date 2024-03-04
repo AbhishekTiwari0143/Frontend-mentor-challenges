@@ -7,7 +7,7 @@ import bgImgD from "../assets/images/desktop/image-hero.jpg";
 const Main = () => {
   return (
     <>
-      <main className="relative">
+      <main className="image relative">
         <img
           src={bgImgD}
           alt="background image"

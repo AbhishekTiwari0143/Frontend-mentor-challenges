@@ -29,26 +29,36 @@ const Header = () => {
             )}
           </div>
           <div className="hidden menu md:block">
-            <ul className="flex items-center justify-center gap-12 text-white alata">
+            <ul className="relative flex items-center justify-center gap-12 text-white alata">
               <li>
-                <a href="javascript;">About</a>
+                <a href="javascript;" className="border-B">
+                  About
+                </a>
               </li>
               <li>
-                <a href="javascript;">Carrers</a>
+                <a href="javascript;" className="border-B">
+                  Carrers
+                </a>
               </li>
               <li>
-                <a href="javascript;">Events</a>
+                <a href="javascript;" className="border-B">
+                  Events
+                </a>
               </li>
               <li>
-                <a href="javascript;">Products</a>
+                <a href="javascript;" className="border-B">
+                  Products
+                </a>
               </li>
               <li>
-                <a href="javascript;">Support</a>
+                <a href="javascript;" className="border-B">
+                  Support
+                </a>
               </li>
             </ul>
           </div>
           <div
-            className={`mobile-nav fixed w-full h-[100vh] -top-full left-0 bg-black ${
+            className={`mobile-nav fixed w-full h-[100vh] -top-[200%] left-0 bg-black ${
               !isActive && "show"
             } md:hidden`}
           >
