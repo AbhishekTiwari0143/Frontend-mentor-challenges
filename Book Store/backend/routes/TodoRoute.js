@@ -12,7 +12,7 @@ router.post("/", async (req, res) => {
     const newTodo = { title: req.body.title };
 
     const todo = await TodoUser.create(newTodo);
-    return res.status(400).send(todo);
+    return res.status(200).send(todo);
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });
