@@ -4,16 +4,37 @@ import phone from "../assets/images/icon-phone.svg";
 import mail from "../assets/images/icon-email.svg";
 
 import bgfooterM from "../assets/images/bg-footer-top-mobile.svg";
+import bgfooterD from "../assets/images/bg-footer-top-desktop.svg";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState(false);
+
+  const handleEmail = () => {
+    if (!email.includes("@")) {
+      setError(true);
+      return;
+    }
+    setEmail("");
+    setError(false);
+  };
+
   return (
     <>
-      <footer className="relative bg-[--Very-Dark-Cyan] text-white py-32">
+      <div className="footer-curves">
         <img
           src={bgfooterM}
           alt="image curve"
-          className="absolute left-0 top-[-3rem] w-full object-contain  md:top-[-12rem]"
+          className=" left-0 top-[-3rem] w-full object-contain md:top-[-12rem] sm:hidden"
         />
+        <img
+          src={bgfooterD}
+          alt="image curve"
+          className="hidden  left-0 top-[-3rem] w-full object-contain  md:top-[-9.2rem] sm:block 2xl:hidden"
+        />
+      </div>
+      <footer className="relative bg-[--Very-Dark-Cyan] text-white py-32">
         <div className="footer container m-auto flex flex-col-reverse justify-center items-center gap-32 px-6 md:flex-row md:justify-between">
           <div className="footer-link Open-Sans md:max-w-[300px]">
             <img src={logoWhite} alt="image logo" className="mb-4" />
@@ -45,11 +66,26 @@ const Footer = () => {
               weekly newsletter. We’ll never send you spam or pass on your email
               address
             </p>
-            <div className="input flex flex-col gap-4 items-end mt-6 md:flex-row">
-              <input type="text" className="p-4 rounded-lg w-full" />
-              <button className="bg-[--Pink] px-10 py-4 poppins-bold rounded-lg text-xl">
-                Subscribe
-              </button>
+            <div className="grid gap-4">
+              <div className="input flex flex-col gap-4 items-end mt-6 md:flex-row">
+                <input
+                  type="text"
+                  className="p-4 rounded-lg w-full text-[--Pink]"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <button
+                  className="bg-[--Pink] px-10 py-4 poppins-bold rounded-lg text-xl hover:bg-[--Light-Pink]"
+                  onClick={handleEmail}
+                >
+                  Subscribe
+                </button>
+              </div>
+              <div
+                className={`error ${error ? "text-red-700" : "text-green-600"}`}
+              >
+                {error ? "Please Check Mail" : ""}
+              </div>
             </div>
           </div>
         </div>

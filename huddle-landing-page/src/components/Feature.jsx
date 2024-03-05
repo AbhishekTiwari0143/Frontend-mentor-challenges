@@ -11,57 +11,48 @@ import bgBottomFeatureD2 from "../assets/images/bg-section-bottom-desktop-2.svg"
 const Feature = () => {
   return (
     <>
-      <section className="Feature relative bg-[--Very-Pale-Blue] py-16">
+      <div className="section-top-curve">
         <img
           src={bgtopFeatureM1}
           alt="image bottom"
-          className="absolute top-[-7rem] md:hidden"
+          className="w-full md:hidden"
         />
         <img
           src={bgtopFeatureD1}
           alt="image bottom"
-          className="hidden absolute top-[-7rem] md:block"
+          className="hidden w-full md:block 2xl:hidden"
         />
-        <div className="flex flex-col gap-10">
-          {Features.map((feature) => {
-            return (
-              <div key={feature.id} className={`${
-                    feature.id === 2 && "bg-white py-44"
-                  }`}>
-                {feature.id === 1 && (
-                  <img
-                    src={bgBottomFeatureM1}
-                    alt="curve bg"
-                    className="absolute -bottom-20 z-10 md:hidden"
-                  />
-                )}
-                {feature.id === 1 && (
-                  <img
-                    src={bgBottomFeatureD1}
-                    alt="curve bg"
-                    className="hidden absolute -bottom-20 z-10 md:block"
-                  />
-                )}
-                {feature.id === 3 && (
-                  <img
-                    src={bgtopFeatureM2}
-                    alt="curve bg"
-                    className="absolute -top-32 z-10 md:hidden"
-                  />
-                )}
-                {feature.id === 3 && (
-                  <img
-                    src={bgtopFeatureD2}
-                    alt="curve bg"
-                    className="hidden absolute -top-32 z-10 md:block"
-                  />
-                )}
+      </div>
+      <section className="Feature relative">
+        {Features.map((feature) => {
+          return (
+            <>
+              {feature.id === 3 && (
+                <img
+                  src={bgtopFeatureM2}
+                  alt="curve bg"
+                  className="w-full md:hidden"
+                />
+              )}
+              {feature.id === 3 && (
+                <img
+                  src={bgtopFeatureD2}
+                  alt="curve bg"
+                  className="hidden w-full md:block 2xl:hidden "
+                />
+              )}
+              <div
+                key={feature.id}
+                className={`${
+                  feature.id === 2 ? "bg-white py-32" : " bg-[--Very-Pale-Blue]"
+                }`}
+              >
                 <div
-                  className={`container m-auto container${feature.id} ${
+                  className={`container m-auto px-6 container${feature.id} ${
                     feature.id === 2 && "bg-white py-44"
                   } flex flex-col items-center justify-center relative md:flex-row ${
                     (feature.id === 1 || feature.id === 3) &&
-                    "md:flex-row-reverse gap-16"
+                    "md:flex-row-reverse gap-16 py-16"
                   }`}
                 >
                   <img
@@ -79,21 +70,34 @@ const Feature = () => {
                   </div>
                 </div>
               </div>
-            );
-          })}
-        </div>
-
-        <img
-          src={bgBottomFeatureM2}
-          alt="curve image"
-          className="absolute -bottom-[6rem] left-0 w-full md:hidden"
-        />
-        <img
-          src={bgBottomFeatureD2}
-          alt="curve image"
-          className="hidden absolute -bottom-[8.7rem] left-0 w-full md:block"
-        />
+              {feature.id === 1 && (
+                <img
+                  src={bgBottomFeatureM1}
+                  alt="curve bg"
+                  className="w-full md:hidden"
+                />
+              )}
+              {feature.id === 1 && (
+                <img
+                  src={bgBottomFeatureD1}
+                  alt="curve bg"
+                  className="hidden w-full md:block 2xl:hidden"
+                />
+              )}
+            </>
+          );
+        })}
       </section>
+      <img
+        src={bgBottomFeatureM2}
+        alt="curve image"
+        className="w-full md:hidden"
+      />
+      <img
+        src={bgBottomFeatureD2}
+        alt="curve image"
+        className="hidden w-full md:block 2xl:hidden"
+      />
     </>
   );
 };

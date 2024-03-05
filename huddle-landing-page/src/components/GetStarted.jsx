@@ -6,7 +6,7 @@ const GetStarted = () => {
           <h1 className="text-3xl text-center poppins-bold md:text-5xl">
             Ready To Build Your Community?
           </h1>
-          <button className="text-xl text-white bg-[--Pink] px-8 py-2 rounded-3xl box-shadow lg:px-16 lg:py-4 lg:rounded-full">
+          <button className="text-xl text-white bg-[--Pink] px-8 py-2 rounded-3xl box-shadow lg:px-16 lg:py-4 lg:rounded-full hover:bg-[--Light-Pink]">
             Get Started For Free
           </button>
         </div>
