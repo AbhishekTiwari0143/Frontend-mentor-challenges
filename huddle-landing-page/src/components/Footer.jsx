@@ -82,7 +82,7 @@ const Footer = () => {
                 </button>
               </div>
               <div
-                className={`error ${error ? "text-red-700" : "text-green-600"}`}
+                className={`error ${error ? "text-red-700" : "text-green-600"}` }
               >
                 {error ? "Please Check Mail" : ""}
               </div>
