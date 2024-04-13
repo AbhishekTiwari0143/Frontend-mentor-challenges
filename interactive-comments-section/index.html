@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive comments section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pull dynamic content from the data.json file -->
+
+    <div class="container m-auto">
+      <div class="comments">
+        <div class="box w-1/2 m-auto flex">
+          <div class="score">
+            <h1>+</h1>
+            <h1>12</h1>
+            <h1>-</h1>
+          </div>
+          <div class="main w-full">
+            <div class="title flex justify-between">
+              <div class="flex">
+                <img src="" alt="image avtar" />
+                <h1>name</h1>
+                <p>time</p>
+              </div>
+              <div class="reply flex">
+                <img src="" alt="icon" />
+                <h1>reply</h1>
+              </div>
+            </div>
+            <div class="comment">
+              <p>comment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
