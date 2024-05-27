@@ -12,7 +12,36 @@ const App = () => {
                 alt="image"
                 className="bg-cover h-full"
               />
-              <div className="text"></div>
+              <div className="text absolute top-20 left-7">
+                <div className="flex gap-4 justify-center items-center">
+                  <h1 className="text-xl border rounded-full p-4">1</h1>
+                  <div className="step">
+                    <p>step 1</p>
+                    <p>Your Info</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 justify-center items-center">
+                  <h1 className="text-xl border rounded-full p-4">2</h1>
+                  <div className="step">
+                    <p>step 2</p>
+                    <p>Select plan</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 justify-center items-center">
+                  <h1 className="text-xl border rounded-full p-4">3</h1>
+                  <div className="step">
+                    <p>step 3</p>
+                    <p>Add-ons</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 justify-center items-center">
+                  <h1 className="text-xl border rounded-full p-4">4</h1>
+                  <div className="step">
+                    <p>step 4</p>
+                    <p>Summary</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="form-function px-12 h-full">
               <div className="form-1 flex flex-col h-full">
