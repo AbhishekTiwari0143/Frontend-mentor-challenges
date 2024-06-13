@@ -35,8 +35,8 @@ function App() {
               services.
             </p>
           </div>
-          <div className="rating flex flex-col gap-4  mt-4 m-auto">
-            <div className="bg-[--light-grayish-magenta] font-semibold p-3 flex flex-col md:flex-row items-center rounded-lg md:w-max pr-16 text-center">
+          <div className="rating flex flex-col gap-4  mt-4 m-auto justify-center">
+            <div className="bg-[--light-grayish-magenta] font-semibold p-3 flex flex-col md:flex-row items-center rounded-lg md:w-max md:pr-16">
               <div className="flex gap-2 px-4 mb-2 md:mb-0">
                 <img src={star} alt="star" />
                 <img src={star} alt="star" />
@@ -60,7 +60,7 @@ function App() {
                 Rated 5 Stars in Report Guru
               </h1>
             </div>
-            <div className="bg-[--light-grayish-magenta] font-semibold p-3 flex items-center flex-col md:flex-row rounded-lg w-max pr-10 md:ml-16">
+            <div className="bg-[--light-grayish-magenta] font-semibold p-3 flex items-center flex-col md:flex-row rounded-lg md:w-max w-full md:pr-10 md:ml-16">
               <div className="flex gap-2 px-4 mb-2 md:mb-0">
                 <img src={star} alt="star" />
                 <img src={star} alt="star" />
