@@ -7,26 +7,26 @@ function App() {
     <>
       <div className=" bg-[--Cream] w-full h-screen">
         <div className="container m-auto flex justify-center items-center h-screen">
-          <div className="box flex w-[550px] h-[400px] bg-[--White] rounded-xl py-3">
+          <div className="box flex w-[550px] bg-[--White] rounded-xl">
             <div className="left w-[50%]">
               <img
                 src={Image}
                 alt="image"
-                className="h-full object-fit rounded-s-xl"
+                className="h-auto object-fit rounded-s-xl"
               />
             </div>
-            <div className="right text p-2 flex flex-col gap-3 w-[50%]">
+            <div className="right text p-6 flex flex-col gap-4 w-[50%]">
               <h2 className="uppercase tracking-widest text-sm montserrat">
                 Perfume
               </h2>
               <h1 className="text-4xl fraunces font-bold">
                 Gabrielle Essence Eau De Parfum
               </h1>
-              <p className="text-[--Dark-grayish-blue] font-medium montserrat">
+              <p className="text-[--Dark-grayish-blue] text-sm font-medium montserrat">
                 A floral, solar and voluptuous interpretation composed by
                 Olivier Polge, Perfumer-Creator for the House of CHANEL.
               </p>
-              <div className="price flex gap-4">
+              <div className="price flex gap-4 items-center">
                 <h1 className="text-[--Dark-cyan] fraunces text-3xl font-bold">
                   $149.99
                 </h1>
