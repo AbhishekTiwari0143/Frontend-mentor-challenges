@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -552,27 +552,4 @@ video {
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
-}
-
-@font-face {
-  font-family: "Karla";
-
-  src: url("./assets/fonts/Karla-VariableFont_wght.ttf");
-}
-
-:root {
-  /* 200 (lighter) */
-  --Green: hsl(148, 38%, 91%);
-  /* 600 (medium)  */
-  --Green: hsl(169, 82%, 27%);
-  --Red: hsl(0, 66%, 54%);
-  --White: hsl(0, 0%, 100%);
-  /* 500 (medium) */
-  --Grey: hsl(186, 15%, 59%);
-  /* 900 (darker) */
-  --Grey: hsl(187, 24%, 22%);
-}
-
-body {
-  font-family: "Karla";
 }

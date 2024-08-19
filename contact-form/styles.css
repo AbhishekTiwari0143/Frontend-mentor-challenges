@@ -1,10 +1,11 @@
-@font-face {
-  font-family: "Karla";
-  src: url("assets/fonts/");
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Karla";
+  src: url("./assets/fonts/Karla-VariableFont_wght.ttf");
+}
 
 :root {
   /* 200 (lighter) */
@@ -19,4 +20,8 @@
   --Grey: hsl(186, 15%, 59%);
   /* 900 (darker) */
   --Grey: hsl(187, 24%, 22%);
+}
+
+body {
+  font-family: "Karla";
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <div class="container m-auto">
+      <div class="content">
+        <div class="Products">
+          <h1 class="text-3xl bg-red-700">Desserts</h1>
+          <div class="card">
+            <div class="img">
+              <div class="w-44 object-contain">
+                <img
+                  src="./assets/images/image-waffle-desktop.jpg"
+                  alt="image Waffle"
+                  class="w-52"
+                />
+              </div>
+              <div class="button">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="image Cart"
+                />
+                <p>Add to Cart</p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Waffle</p>
+              <h2>Waffle with Berries</h2>
+              <h2>$6.50</h2>
+            </div>
+          </div>
+        </div>
+        <div class="Cart p-6">
+          <h1>Your Cart (0)</h1>
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            alt="Image Empty"
+            class="empty"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
